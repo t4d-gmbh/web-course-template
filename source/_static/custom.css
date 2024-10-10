@@ -1,0 +1,26 @@
+/* Just some suggestion on what colors to use for git commands */
+
+.pull {
+  color: red;
+}
+.push {
+  color: darkviolet;
+}
+.commit{
+  color: blue;
+}
+.fetch{
+  color: green;
+}
+.clone{
+  color: #ca80e9;
+}
+.merge{
+  color: lightgreen;
+}
+.rebase{
+  color: orange;
+}
+.add{
+  color: gray;
+}
