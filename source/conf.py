@@ -39,24 +39,24 @@ html_context = {
 
 discuss_icon = {
             "name": "GitHub Discussion",
-            "url": "https://github.com/t4d-gmbh/working-with-git/discussions",
+            "url": "https://github.com/t4d-gmbh/web-course-template/discussions",
             "icon": "fa-regular fa-comments",
             "type": "fontawesome",
         }
 pages_icon = {
             "name": "Pages",
-            "url": "https://t4d-gmbh.github.io/working-with-git/index.html",
+            "url": "https://t4d-gmbh.github.io/web-course-template/index.html",
             "icon": "fa-solid fa-book",
             "type": "fontawesome",
         }
 slides_icon = {
             "name": "Slides",
-            "url": "https://t4d-gmbh.github.io/working-with-git/slides/index.html",
+            "url": "https://t4d-gmbh.github.io/web-course-template/slides/index.html",
             "icon": "fa-solid fa-person-chalkboard",
             "type": "fontawesome",
         }
 html_theme_options = {
-    "repository_url": "https://github.com/t4d-gmbh/working-with-git",
+    "repository_url": "https://github.com/t4d-gmbh/web-course-template",
     "repository_branch": "main",
     "path_to_docs": "source/",
     "use_edit_page_button": True,
