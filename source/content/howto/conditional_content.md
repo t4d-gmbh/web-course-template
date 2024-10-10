@@ -11,6 +11,7 @@ You can use:
 
 The above `slide1.md` could look as follows:
 
+{% raw %}
     {% if build == "slides" %}
     # Slide 1 title
     {% else %}
@@ -25,3 +26,4 @@ The above `slide1.md` could look as follows:
     {% if page %}
     This text is only in the pages view and not on the slide
     {% endif %}
+{% endraw %}

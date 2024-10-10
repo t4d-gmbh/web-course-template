@@ -1,17 +1,38 @@
+from datetime import date
 from setuptools_scm import get_version
+
+# -- Configuration parameter -------------------------------------------------
+# ----------------------------------------------------------------------------
+repository_owner = "t4d-gmbh"
+repository_name = "web-course-template"
+repository_branch = "main"
+# -- optionally adat these
+repository_url = r"https://github.com/{repository_owner}/{repository_name}"
+page_url = f"https://{repository_owner}.github.io/{repository_name}",
+# -- set the logo
+course_logo = {
+    "image_light": "_static/T4D_logo_bw.svg",
+    "image_dark": "_static/T4D_logo_wb.svg",
+    "link": f"{page_url}/index.html",
+    "alt-text": "T4D GmbH",
+    "favicon": "_static/T4D_logo_bw.svg",
+}
+# -- name your project
+project = 'Web Course Template'
+# -- provide authorship info
+author = 'Jonas Liechti - https://github.com/j-i-l'
+# -- optionally adapt copyright
+copyright = f'{date.today().year}, {repository_owner}'
+# -- should the duscussion link be shown?
+show_discussion_link = True
+# ----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
 
 # ###
 # Versioning - get it from the git tag
 # ###
 version: str = get_version(root='..')
 release = version
-
-# ###
-# Basic Project info
-# ###
-project = 'Web Course Template'
-copyright = '2023-2024, T4D GmbH'
-author = 'Jonas Liechti - https://github.com/j-i-l'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -39,49 +60,60 @@ html_context = {
 
 discuss_icon = {
             "name": "GitHub Discussion",
-            "url": "https://github.com/t4d-gmbh/web-course-template/discussions",
+            "url": f"{repository_url}/discussions",
             "icon": "fa-regular fa-comments",
             "type": "fontawesome",
         }
 pages_icon = {
             "name": "Pages",
-            "url": "https://t4d-gmbh.github.io/web-course-template/index.html",
+            "url": f"{page_url}/index.html",
             "icon": "fa-solid fa-book",
             "type": "fontawesome",
         }
 slides_icon = {
             "name": "Slides",
-            "url": "https://t4d-gmbh.github.io/web-course-template/slides/index.html",
+            "url": f"{page_url}/slides/index.html",
             "icon": "fa-solid fa-person-chalkboard",
             "type": "fontawesome",
         }
+
+icon_links_pages = [slides_icon]
+icon_links_slides = [pages_icon]
+if show_discussion_link:
+    icon_links_pages.insert(0, discuss_icon)
+    icon_links_slides.insert(0, discuss_icon)
+
+
 html_theme_options = {
-    "repository_url": "https://github.com/t4d-gmbh/web-course-template",
-    "repository_branch": "main",
+    "repository_url": repository_url,
+    "repository_branch": repository_branch,
     "path_to_docs": "source/",
     "use_edit_page_button": True,
     "use_repository_button": True,
     "toc_title": "Content",
     "use_sidenotes": True,
     "logo": {
-        "text": "T4D GmbH",
-        "image_light": "_static/T4D_logo_bw.svg",
-        "image_dark": "_static/T4D_logo_wb.svg",
-        "link": "https://github.com/t4d-gmbh",
+        "text": course_logo.get('alt-text', 'logo'),
+        "image_light": course_logo.get('image_light', None),
+        "image_dark": course_logo.get('image_dark', None),
+        "link": course_logo.get('link', page_url),
         },
     "show_toc_level": 2,  # Show the table of contents up to level 2
     "navigation_with_keys": True,  # Enable keyboard navigation
     "collapse_navigation": False,  # Do not collapse the navigation
     # "sidebar_width": "250px",  # Set the width of the sidebar
-    "icon_links": [discuss_icon, slides_icon],
+    "icon_links": icon_links_pages,
 }
 
 favicons = [
-    "_static/T4D_logo_bw.svg"
+    course_logo.get('favicon', None)
 ]
 
 myst_enable_extensions = [
     "colon_fence",
+]
+suppress_warnings = [
+    "myst.header", # suppress warnings of the kind "WARNING: Non-consecutive header level increase; H1 to H3"
 ]
 
 # ###
@@ -124,7 +156,7 @@ def setup(app):
                 ]
         }
         # only show discuss and pages icons in sidebar
-        app.config.html_theme_options['icon_links'] = [discuss_icon, pages_icon]
+        app.config.html_theme_options['icon_links'] = icon_links_slides
         # adding the new styling
         app.config.html_css_files.append('slides.css')
     app.connect("source-read", rstjinja)

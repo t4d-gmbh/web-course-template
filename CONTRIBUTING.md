@@ -1,4 +1,4 @@
-# Contributing to <img src="./source/_static/T4D_logo_bw.svg" alt="T4D GmbH" width="20" height="20">'s `Web Course Template` 📚
+# Contributing to <img src="./source/_static/T4D_logo_bw.svg" alt="T4D" width="20" height="20">'s `Web Course Template` 📚
 
 Thank you for your interest in contributing to this template!
 
