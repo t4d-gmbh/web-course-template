@@ -7,7 +7,7 @@ repository_owner = "t4d-gmbh"
 repository_name = "web-course-template"
 repository_branch = "main"
 # -- optionally adat these
-repository_url = r"https://github.com/{repository_owner}/{repository_name}"
+repository_url = f"https://github.com/{repository_owner}/{repository_name}"
 page_url = f"https://{repository_owner}.github.io/{repository_name}"
 # -- set the logo
 course_logo = {
