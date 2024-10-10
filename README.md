@@ -1,17 +1,16 @@
 # Web Course Template
 
-This is <img src="./source/_static/T4D_logo_bw.svg" alt="T4D GmbH" width="20" height="20">'s template for a web-based
+This is <img src="./source/_static/T4D_logo_bw.svg" alt="T4D" width="25" height="25">'s template for a web-based
 course/workshop content.
 
 Feel free to use it as you please!
 
-## Usage 🧱
+## Usage 🛠️
 
 You can simply [use this repository as a template](https://github.com/new?template_name=web-course-template&template_owner=t4d-gmbh) for your own project.
 
-The actual content of the web-based course resides in the [`./source/content`](./source/content) folder.
-You will already find some documentation on how to use this template there.
-So consider the content both as 🧭 guideline and 💡 inspiration.
+The actual content of the web-based course resides under `./source/content` folder.
+There you find the content for the documentation of this templat which should serve you both as 🧭 guideline and 💡 inspiration.
 
 
 <!-- include-upper -->
