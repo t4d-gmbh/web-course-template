@@ -6,11 +6,8 @@ Here you can find some projects that use this template:
 <!-- BUILDING THE SLIDES -->
 ```{toctree}
 :maxdepth: 2
-:caption: Examples
 
 ./working-with-git
-./combining
-./conditional_content
 ```
 {% else %}
 <!-- BUILDING THE PAGES -->
