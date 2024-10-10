@@ -4,7 +4,9 @@ We want to display each slide as a separate site but combine several slides into
 
 To do so we can use the following pattern in each`index.md` file of a sub-folder in `source/content`:
 
-    \{% if build == "slides" %\}
+
+{% raw %}
+    {% if build == "slides" %}
     <!-- BUILDING THE SLIDES -->
     ```{toctree}
     :maxdepth: 2
@@ -13,10 +15,11 @@ To do so we can use the following pattern in each`index.md` file of a sub-folder
     ./slide1
     ./slide2
     ```
-    \{% else %\}
+    {% else %}
     <!-- BUILDING THE PAGES -->
     ```{include} ./slide1.md
     ```
     ```{include} ./slide2.md
     ```
-    \{% endif %\}
+    {% endif %}
+{% endraw %}
