@@ -10,7 +10,7 @@ Feel free to use it as you please!
 You can simply [use this repository as a template](https://github.com/new?template_name=web-course-template&template_owner=t4d-gmbh) for your own project.
 
 The actual content of the web-based course resides under `./source/content` folder.
-There you find the content for the documentation of this templat which should serve you both as 🧭 guideline and 💡 inspiration.
+There you find the content for the documentation of this template which should serve you both as 🧭 guideline and 💡 inspiration.
 
 
 <!-- include-upper -->
