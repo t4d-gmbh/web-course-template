@@ -24,3 +24,13 @@
 .add{
   color: gray;
 }
+
+.admonition .sd-container-fluid {
+  margin-left: inherit !important;
+}
+.bigger {
+  font-size: 130%;
+}
+.smaller {
+  font-size: 60%;
+}
