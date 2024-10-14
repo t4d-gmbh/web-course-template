@@ -41,6 +41,7 @@ extensions = [
     "myst_parser",
     "sphinx_favicon",
     "sphinx_design",
+    "sphinx_togglebutton",
     "sphinx_tabs.tabs",
 ]
 
