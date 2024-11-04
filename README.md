@@ -5,6 +5,12 @@ course/workshop content.
 
 Feel free to use it as you please!
 
+---
+
+_If you find this template useful, please share it with others! Show your support by giving it a 🌟 using the ⭐-button at the top right of the page._
+
+---
+
 ## Usage 🛠️
 
 You can simply [use this repository as a template](https://github.com/new?template_name=web-course-template&template_owner=t4d-gmbh) for your own project.
