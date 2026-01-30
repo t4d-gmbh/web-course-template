@@ -3,7 +3,7 @@ from setuptools_scm import get_version
 
 # -- Configuration parameter -------------------------------------------------
 # ----------------------------------------------------------------------------
-repository_owner = "t4d-gmbh"
+repository_owner = "T4D-GmbH"
 repository_name = "web-course-template"
 repository_branch = "main"
 # -- optionally adat these
