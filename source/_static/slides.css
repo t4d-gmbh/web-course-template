@@ -11,3 +11,15 @@ aside.sidebar > ul {
 .admonition-title {
   padding-left: 2em !important;
 }
+
+#rescaled-text {
+    font-size: 1vh !important;
+}
+#rescaled-text h1 {
+    margin: 1.5vh 0 0.5vh 0 !important;
+    font-size: 3vh !important;
+}
+#rescaled-text h2 {
+    margin: 1vh 0 0.5vh 0 !important;
+    font-size: 2vh !important;
+}
