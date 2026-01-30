@@ -14,14 +14,13 @@ _If you find this template useful, please share it with others! Show your suppor
 ## Usage 🛠️
 
 You can simply [use this repository as a template](https://github.com/new?template_name=web-course-template&template_owner=t4d-gmbh) for your own project.
-Don't forget to star 🌟 the repository to show your support! Just click the ⭐-button at the top right of the page!
-By starring ⭐the repository you are helping it gain visibility making it easier for others to 🔍 discover it !
 
-The actual content of the web-based course resides under `./source/content` folder.
+The **actual content** of the web-based course resides under `./source/content` folder.
 There you find the content for the documentation of this template which should serve you both as 🧭 guideline and 💡 inspiration.
-
-
+The layout of the page is done in `./source/conf.py` file.
 <!-- include-upper -->
+
+You will find further details in the [online documentation](https://t4d-gmbh.github.io/web-course-template/).
 
 ## Contributing 🤝🎉
 
