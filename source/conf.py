@@ -94,7 +94,7 @@ html_theme_options = {
     "toc_title": "Content",
     "use_sidenotes": True,
     "logo": {
-        "text": course_logo.get('alt-text', 'logo'),
+        # "text": course_logo.get('alt-text', 'logo'),
         "image_light": course_logo.get('image_light', None),
         "image_dark": course_logo.get('image_dark', None),
         "link": course_logo.get('link', page_url),
