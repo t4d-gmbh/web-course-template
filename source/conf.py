@@ -3,7 +3,7 @@ from setuptools_scm import get_version
 
 # -- Configuration parameter -------------------------------------------------
 # ----------------------------------------------------------------------------
-repository_owner = "t4d-gmbh"
+repository_owner = "T4D-GmbH"
 repository_name = "web-course-template"
 repository_branch = "main"
 # -- optionally adat these
@@ -11,8 +11,8 @@ repository_url = f"https://github.com/{repository_owner}/{repository_name}"
 page_url = f"https://{repository_owner}.github.io/{repository_name}"
 # -- set the logo
 course_logo = {
-    "image_light": "_static/T4D_logo_bw.svg",
-    "image_dark": "_static/T4D_logo_wb.svg",
+    "image_light": "_static/T4D_logo_bw_new.svg",
+    "image_dark": "_static/T4D_logo_wb_new.svg",
     "link": f"{page_url}/index.html",
     "alt-text": "T4D GmbH",
     "favicon": "_static/T4D_logo_bw.svg",
@@ -94,7 +94,7 @@ html_theme_options = {
     "toc_title": "Content",
     "use_sidenotes": True,
     "logo": {
-        "text": course_logo.get('alt-text', 'logo'),
+        # "text": course_logo.get('alt-text', 'logo'),
         "image_light": course_logo.get('image_light', None),
         "image_dark": course_logo.get('image_dark', None),
         "link": course_logo.get('link', page_url),
