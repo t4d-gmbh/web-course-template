@@ -7,5 +7,5 @@ myst-parser~=5.0.0
 sphinx-favicon~=1.0.1
 sphinx-tabs~=3.4.7
 sphinx_design~=0.7.0
-sphinx-togglebutton0.4.4
+sphinx-togglebutton~=0.4.4
 setuptools_scm~=9.2.2  # for the git versioning
