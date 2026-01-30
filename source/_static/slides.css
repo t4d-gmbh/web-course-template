@@ -13,7 +13,7 @@ aside.sidebar > ul {
 }
 
 #rescaled-text {
-    font-size: 1vh !important;
+    font-size: max(1vh, 1vw) !important;
 }
 #rescaled-text h1 {
     margin: 1.5vh 0 0.5vh 0 !important;
