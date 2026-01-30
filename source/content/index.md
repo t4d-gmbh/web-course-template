@@ -1,10 +1,20 @@
 ```{toctree}
-:maxdepth: {% if build == "slides" %}1{% else %}2{% endif %}
+{% if build == "slides' %}
+:maxdepth: 1
+:numbered"
+{% else %}
+:maxdepth: 1
+{% endif %}
 
 howto/index
 ```
 ```{toctree}
-:maxdepth: {% if build == "slides" %}1{% else %}2{% endif %}
+{% if build == "slides' %}
+:maxdepth: 1
+:numbered"
+{% else %}
+:maxdepth: 1
+{% endif %}
 
 examples/index
 ```
