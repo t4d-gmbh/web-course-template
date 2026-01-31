@@ -3,10 +3,11 @@
 ```{include} ../README.md
 :end-before: <!-- include-upper -->
 ```
-```{toctree}
-:maxdepth: 2
-:caption: Course Template Docs
-{% if build == "slides" %}:numbered:{% endif %}
 
-content/index
+```{toctree}
+:caption: Table of content
+:maxdepth: 2
+
+content/howto/index
+content/examples/index
 ```
