@@ -3,13 +3,10 @@
 ```{include} ../README.md
 :end-before: <!-- include-upper -->
 ```
+
 ```{toctree}
-:caption: Course Template Docs
-{% if slide %}
-:hidden:
-{% else %}
+:caption: Table of content
 :maxdepth: 2
-{% endif %}
 
 content/howto/index
 content/examples/index

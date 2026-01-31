@@ -17,7 +17,7 @@ You can simply [use this repository as a template](https://github.com/new?templa
 
 The **actual content** of the web-based course resides under `./source/content` folder.
 There you find the content for the documentation of this template which should serve you both as 🧭 guideline and 💡 inspiration.
-The **layout** of the web course is defined in `./source/conf.py` file.
+The **design** of the web course is defined in `./source/conf.py` file.
 <!-- include-upper -->
 
 Head over to the [online documentation](https://t4d-gmbh.github.io/web-course-template/) for detailed instructions how to build your own web course.

@@ -3,9 +3,9 @@
 {% if build == "slides" %}
 <!-- BUILDING THE SLIDES -->
 ```{toctree}
-:maxdepth: 2
-:caption: How-To
+:hidden:
 
+./customization
 ./structure
 ./combining
 ./page_content
