@@ -6,16 +6,16 @@ from setuptools_scm import get_version
 repository_owner = "T4D-GmbH"
 repository_name = "web-course-template"
 repository_branch = "main"
-# -- optionally adat these
+# -- optionally adapt these
 repository_url = f"https://github.com/{repository_owner}/{repository_name}"
 page_url = f"https://{repository_owner}.github.io/{repository_name}"
 # -- set the logo
 course_logo = {
-    "image_light": "_static/T4D_logo_bw_new.svg",
-    "image_dark": "_static/T4D_logo_wb_new.svg",
+    "image_light": "_static/T4D_logo_bw.svg",
+    "image_dark": "_static/T4D_logo_wb.svg",
     "link": f"{page_url}/index.html",
     "alt-text": "T4D GmbH",
-    "favicon": "_static/T4D_logo_bw.svg",
+    "favicon": "_static/T4D_logo.svg",
 }
 # -- name your project
 project = 'Web Course Template'
@@ -23,7 +23,7 @@ project = 'Web Course Template'
 author = 'Jonas Liechti - https://github.com/j-i-l'
 # -- optionally adapt copyright
 copyright = f'{date.today().year}, {repository_owner}'
-# -- should the duscussion link be shown?
+# -- should the discussion link be shown?
 show_discussion_link = True
 # ----------------------------------------------------------------------------
 # ----------------------------------------------------------------------------

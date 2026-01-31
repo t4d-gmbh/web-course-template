@@ -1,6 +1,6 @@
 # Web Course Template
 
-This is <img src="./source/_static/T4D_logo_bw.svg" alt="T4D" width="25" height="25">'s template for a web-based
+This is <img src="./source/_static/T4D_logo.svg" alt="T4D" width="25" height="25">'s template for a web-based
 course/workshop content.
 
 Feel free to use it as you please!
