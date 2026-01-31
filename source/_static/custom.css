@@ -1,3 +1,46 @@
+/* Fonts */
+@font-face {
+    font-family: 'M+ 2';
+    src: url('._static/fonts/Mplus2-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'M+ 2';
+    src: url('._static/fonts/Mplus2-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'M+ Code';
+    src: url('._static/fonts/MplusCodeLatin50-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'M+ Code';
+    src: url('._static/fonts/MplusCodeLatin50-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'M+ 2', sans-serif;
+    font-weight: normal !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'M+ 2', sans-serif;
+    font-weight: 600 !important;
+}
+
+pre, code {
+    font-family: 'M+ Code', monospace;
+}
+
+/* Add more selectors as needed */
 /* Just some suggestion on what colors to use for git commands */
 
 .pull {
