@@ -1,4 +1,4 @@
-## Content Structure
+### Content Structure
 
 The following 📜 principles apply:
 

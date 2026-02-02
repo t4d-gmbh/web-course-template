@@ -1,4 +1,4 @@
-## Conditional Content
+### Conditional Content
 
 Within each included or imported `.md` file you can also specify what content you want
 to show in the slides and what should be shown in the page view.

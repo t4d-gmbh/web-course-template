@@ -6,14 +6,10 @@ from setuptools_scm import get_version
 repository_owner = "T4D-GmbH"
 repository_name = "web-course-template"
 repository_branch = "main"
-# -- optionally adapt these
-repository_url = f"https://github.com/{repository_owner}/{repository_name}"
-page_url = f"https://{repository_owner}.github.io/{repository_name}"
 # -- set the logo
 course_logo = {
-    "image_light": "_static/T4D_logo_bw.svg",
-    "image_dark": "_static/T4D_logo_wb.svg",
-    "link": f"{page_url}/index.html",
+    "image_light": "_static/T4D_logo_bw_new.svg",
+    "image_dark": "_static/T4D_logo_wb_new.svg",
     "alt-text": "T4D GmbH",
     "favicon": "_static/T4D_logo.svg",
 }
@@ -21,7 +17,14 @@ course_logo = {
 project = 'Web Course Template'
 # -- provide authorship info
 author = 'Jonas Liechti - https://github.com/j-i-l'
-# -- optionally adapt copyright
+# ---OPTIONAL ----------------------------------------------------------------
+# -- custom page url for own domain
+page_url = f"https://{repository_owner}.github.io/{repository_name}"
+# -- where a click on the logo should lead
+course_logo["link"] = f"{page_url}/index.html"
+# -- custom repository url
+repository_url = f"https://github.com/{repository_owner}/{repository_name}"
+# -- adapt copyright
 copyright = f'{date.today().year}, {repository_owner}'
 # -- should the discussion link be shown?
 show_discussion_link = True
@@ -101,7 +104,7 @@ html_theme_options = {
         },
     "show_toc_level": 2,  # Show the table of contents up to level 2
     "navigation_with_keys": True,  # Enable keyboard navigation
-    "collapse_navigation": False,  # Do not collapse the navigation
+    "collapse_navbar": False,  # Do not collapse the navigation
     # "sidebar_width": "250px",  # Set the width of the sidebar
     "icon_links": icon_links_pages,
 }
@@ -114,8 +117,10 @@ myst_enable_extensions = [
     "colon_fence",
 ]
 suppress_warnings = [
-    "myst.header", # suppress warnings of the kind "WARNING: Non-consecutive header level increase; H1 to H3"
+    # suppress "WARNING: Non-consecutive header level increase; H1 to H3"
+    "myst.header",
 ]
+
 
 # ###
 # Custom jinja parser to enable jinja templating
@@ -124,7 +129,6 @@ def rstjinja(app, docname, source):
     """
     Render source file with jinja first
     """
-    print(f"{docname=}")
     # only apply to 'html' builder
     if app.builder.format == 'html':
         src = source[0]
@@ -133,8 +137,10 @@ def rstjinja(app, docname, source):
         )
         source[0] = rendered
 
+
 def include_rstjinja(app, docname, parent_docname, source):
     return rstjinja(app=app, docname=docname, source=source)
+
 
 def setup(app):
     builds = app.config.html_context.get('build', 'pages')
@@ -158,6 +164,8 @@ def setup(app):
         }
         # only show discuss and pages icons in sidebar
         app.config.html_theme_options['icon_links'] = icon_links_slides
+        # Collapse the left sidebar by default
+        app.config.html_theme_options['collapse_navbar'] = True
         # adding the new styling
         app.config.html_css_files.append('slides.css')
     app.connect("source-read", rstjinja)

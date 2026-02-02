@@ -1,38 +1,18 @@
 # How-To
 
-{% if build == "slides" %}
-<!-- BUILDING THE SLIDES -->
-```{toctree}
-:maxdepth: 2
-:caption: How-To
-
-./structure
-./combining
-./page_content
-./page_index
-./page_example
-./page_import
-./conditional_content
-```
+{% if page %}
+To make this web course template your own all you have to do is to customize the
+looks and to add your own content.
 {% else %}
-<!-- BUILDING THE PAGES -->
-```{include} ./structure.md
-```
-```{include} ./combining.md
-```
-To do so we can follow this approach:
+All you have to do is:
 
-```{include} ./page_content.md
-```
-```{include} ./page_index.md
-```
-And here is how a full `📂mypage/📄index.md` could look like: 
-```{include} ./page_example.md
-```
-Finally, we still need to include the page:
-```{include} ./page_import.md
-```
-```{include} ./conditional_content.md
-```
+- **customize** the looks
+- add your own **content**.
 {% endif %}
 
+```{toctree}
+:maxdepth: 2
+
+./customization/index
+./content/index
+```
