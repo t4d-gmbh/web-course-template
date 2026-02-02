@@ -3,24 +3,24 @@ from setuptools_scm import get_version
 
 # -- Configuration parameter -------------------------------------------------
 # ----------------------------------------------------------------------------
-repository_owner = "T4D-GmbH"
-repository_name = "web-course-template"
+repository_owner = "FIXME"
+repository_name = "FIXME"
 repository_branch = "main"
 # -- optionally adapt these
 repository_url = f"https://github.com/{repository_owner}/{repository_name}"
 page_url = f"https://{repository_owner}.github.io/{repository_name}"
 # -- set the logo
 course_logo = {
-    "image_light": "_static/T4D_logo_bw.svg",
-    "image_dark": "_static/T4D_logo_wb.svg",
+    "image_light": "_static/FIXME",
+    "image_dark": "_static/FIXME",
     "link": f"{page_url}/index.html",
-    "alt-text": "T4D GmbH",
-    "favicon": "_static/T4D_logo.svg",
+    "alt-text": "",  # FIXME: optionally provide alt text
+    "favicon": "_static/FIXME",
 }
 # -- name your project
-project = 'Web Course Template'
+project = 'FIXME'
 # -- provide authorship info
-author = 'Jonas Liechti - https://github.com/j-i-l'
+author = 'FIXME'
 # -- optionally adapt copyright
 copyright = f'{date.today().year}, {repository_owner}'
 # -- should the discussion link be shown?
