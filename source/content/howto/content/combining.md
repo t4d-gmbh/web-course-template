@@ -1,4 +1,4 @@
-## Combining Content
+### Combining Content
 
 We want to display each slide as a separate site but combine several slides into a single static webpage.
 
