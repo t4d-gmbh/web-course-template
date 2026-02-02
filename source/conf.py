@@ -114,8 +114,10 @@ myst_enable_extensions = [
     "colon_fence",
 ]
 suppress_warnings = [
-    "myst.header", # suppress warnings of the kind "WARNING: Non-consecutive header level increase; H1 to H3"
+    # suppress "Non-consecutive header level increase; H1 to H3" warnings
+    "myst.header",
 ]
+
 
 # ###
 # Custom jinja parser to enable jinja templating
@@ -133,8 +135,10 @@ def rstjinja(app, docname, source):
         )
         source[0] = rendered
 
+
 def include_rstjinja(app, docname, parent_docname, source):
     return rstjinja(app=app, docname=docname, source=source)
+
 
 def setup(app):
     builds = app.config.html_context.get('build', 'pages')
