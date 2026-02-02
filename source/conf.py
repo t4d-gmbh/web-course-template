@@ -11,7 +11,7 @@ course_logo = {
     "image_light": "_static/T4D_logo_bw_new.svg",
     "image_dark": "_static/T4D_logo_wb_new.svg",
     "alt-text": "T4D GmbH",
-    "favicon": "_static/T4D_logo_bw.svg",
+    "favicon": "_static/T4D_logo.svg",
 }
 # -- name your project
 project = 'Web Course Template'
