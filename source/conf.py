@@ -6,14 +6,10 @@ from setuptools_scm import get_version
 repository_owner = "FIXME"
 repository_name = "FIXME"
 repository_branch = "main"
-# -- optionally adapt these
-repository_url = f"https://github.com/{repository_owner}/{repository_name}"
-page_url = f"https://{repository_owner}.github.io/{repository_name}"
 # -- set the logo
 course_logo = {
     "image_light": "_static/FIXME",
     "image_dark": "_static/FIXME",
-    "link": f"{page_url}/index.html",
     "alt-text": "",  # FIXME: optionally provide alt text
     "favicon": "_static/FIXME",
 }
@@ -22,6 +18,14 @@ project = 'FIXME'
 # -- provide authorship info
 author = 'FIXME'
 # -- optionally adapt copyright
+# ---OPTIONAL ----------------------------------------------------------------
+# -- custom page url for own domain
+page_url = f"https://{repository_owner}.github.io/{repository_name}"
+# -- where a click on the logo should lead
+course_logo["link"] = f"{page_url}/index.html"
+# -- custom repository url
+repository_url = f"https://github.com/{repository_owner}/{repository_name}"
+# -- adapt copyright
 copyright = f'{date.today().year}, {repository_owner}'
 # -- should the discussion link be shown?
 show_discussion_link = True
@@ -101,7 +105,7 @@ html_theme_options = {
         },
     "show_toc_level": 2,  # Show the table of contents up to level 2
     "navigation_with_keys": True,  # Enable keyboard navigation
-    "collapse_navigation": False,  # Do not collapse the navigation
+    "collapse_navbar": False,  # Do not collapse the navigation
     # "sidebar_width": "250px",  # Set the width of the sidebar
     "icon_links": icon_links_pages,
 }
@@ -126,7 +130,6 @@ def rstjinja(app, docname, source):
     """
     Render source file with jinja first
     """
-    print(f"{docname=}")
     # only apply to 'html' builder
     if app.builder.format == 'html':
         src = source[0]
@@ -162,6 +165,8 @@ def setup(app):
         }
         # only show discuss and pages icons in sidebar
         app.config.html_theme_options['icon_links'] = icon_links_slides
+        # Collapse the left sidebar by default
+        app.config.html_theme_options['collapse_navbar'] = True
         # adding the new styling
         app.config.html_css_files.append('slides.css')
     app.connect("source-read", rstjinja)
