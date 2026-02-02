@@ -6,7 +6,7 @@ The customization is done in the `source/config.py` file.
  :class: tip
 
 The `source/config.py` file used to build this web-content can be found
-[here](https://github.com/t4d-gmbh/web-course-template/blob/public/source/conf.py).
+[here](https://github.com/t4d-gmbh/web-course-template/blob/publish/source/conf.py).
 
 ```
 
